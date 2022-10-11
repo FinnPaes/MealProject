@@ -273,6 +273,9 @@ export default {
         
         // Check if favorites isn't empty, and IF the meal is in the favorites, set the favorited status to true
         if (currentFavorites && this.meal.idMeal in currentFavorites) this.favorited = true;
+
+        // Scroll to top
+        window.scrollTo(0, 0);
     },
 
     methods: {

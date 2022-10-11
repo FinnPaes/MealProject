@@ -44,6 +44,11 @@ export default {
     // Set meta tags
     head: {
         title: "Meal Finder - Find your meal!"
+    },
+
+    mounted() {
+        // Scroll to top
+        window.scrollTo(0, 0);
     }
 }
 </script>
