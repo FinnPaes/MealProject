@@ -41,10 +41,10 @@ In this project I use **Vitest** to do Unit testing. You can execute the tests t
 
 ### Tests done:
 
-#### **Icon test**
+#### **Icon test:**
 The first test that executes is the Burger Icon test. This will test if the Burger Icon is included in the navigation/menu component. **tests/BurgerIcon.test.js**
 
-#### **Nuxt test**
+#### **Nuxt test:**
 The second test checks wether Nuxt is able to start/build without performing any crucial errors. **tests/Nuxt.test.js**
 
 ## Architectural decisions
@@ -66,10 +66,10 @@ The second test checks wether Nuxt is able to start/build without performing any
 - NuxtJS 3
 ## Features
 
-#### **Random meal**
+#### **Random meal:**
 When you visit the application you are greeted with a dashboard that shows a random meal out of TheMealDB. Every time you refresh, a random meal will be fetched and displayed.
 
-#### **Search**
+#### **Search:**
 In the navigation at the top right, you are able to search through meals using their name. The results will show a small picture, including the name of the meal. Selecting a meal from the search will open the meal in a new page, with information such as:
 
 - Name of the dish
@@ -79,8 +79,8 @@ In the navigation at the top right, you are able to search through meals using t
 - Video on how to prepare the dish *(if available from TheMealDB)*
 - A list of ingredients including the measures
 
-### **Favorites** *extra/bonus*
+#### **Favorites:** *extra/bonus*
 If you select a meal, you are able to add it to your favorites, this will be stored locally in your browser using [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage). You are able to add 5 meals to your favorites. You can see your favorites on the dashboard.
 
-### **Navigation** *extra/bonus*
+#### **Navigation:** *extra/bonus*
 When selecting a meal from the search bar, favorites or dashboard you will navigate to the meal page. At the left, under ingredients there are 2 buttons to take quick actions, one of them brings you back to the dashboard. All of this has been done without refreshing your browser, as Nuxt makes it into a SPA.
