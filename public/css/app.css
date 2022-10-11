@@ -1,0 +1,57 @@
+@import "reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+    box-sizing: border-box;
+
+    --font: "Roboto", "Segoe UI", "sans-serif";
+
+    /* Re-usable color variables */
+    --black: #000;
+    --white: #FFF;
+    --dark: #2c2c2c;
+    --light-grey: #F3F4F6;
+    --green: #0B7774;
+    --red: #ED4949;
+}
+
+body {
+    font-family: var(--font);
+    font-size: 16px;
+    background-color: #F0F0F0;
+}
+
+input, button, textarea {
+    font-family: var(--font);
+}
+
+
+/* Global stylings used across multiple components/pages */
+.global-wrapper {
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    padding: 0px 20px;
+}
+
+.label-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    margin-top: 10px;
+}
+
+.label {
+    font-size: 1rem;
+    line-height: 21px;
+    color: var(--white);
+    background-color: var(--green);
+    padding: 5px;
+    border-radius: 5px;
+    width: fit-content;
+    margin-right: 10px;
+}
+
+.label:last-of-type {
+    margin-right: 0px;
+}
